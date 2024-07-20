@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('payment.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+div {
+    margin-top: 20%;
+}
+
+form {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.buy-button {
+    padding: 15px 25px;
+    font-size: 16px;
+    background-color: #22bb33;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.buy-button:hover {
+    background-color: green;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 80%;
+    }
+
+    .buy-button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
