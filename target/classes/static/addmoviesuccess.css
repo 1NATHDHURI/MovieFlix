@@ -1,0 +1,72 @@
+/* Reset some basic elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('addmoviesuccess.jpg'); /* Add the correct path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h2 {
+    color: #fff; /* White color for text to contrast with the background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background for form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"] {
+    background-color: rgba(76, 175, 80, 0.7); /* Semi-transparent green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(76, 175, 80, 0.9); /* Less transparent on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        font-size: 14px;
+    }
+}

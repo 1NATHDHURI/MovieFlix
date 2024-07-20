@@ -1,0 +1,84 @@
+/* Reset some basic elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('addmovie.jpg'); /* Add the correct path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: #fff; /* White color for text to contrast with the background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.4); /* Transparent black background for form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+    margin-left: 20px; /* Center the form horizontally */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* White color for text to contrast with the form background */
+}
+
+input[type="text"], select {
+    width: calc(100% - 20px); /* Adjust width to account for padding and margin */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    color: #333; /* Dark text for better readability */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+input[type="submit"] {
+    background-color: rgba(76, 175, 80, 0.7); /* Semi-transparent green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: calc(100% - 20px); /* Adjust width to account for padding and margin */
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(76, 175, 80, 0.9); /* Less transparent on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    label, input[type="text"], select, input[type="submit"] {
+        width: calc(100% - 20px); /* Ensure full width with margins */
+        font-size: 16px;
+    }
+}

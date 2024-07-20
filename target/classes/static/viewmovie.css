@@ -1,0 +1,94 @@
+/* Reset some basic elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+    color: #333; /* Dark text color for better readability */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333; /* Dark color for the heading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Light text shadow for better readability */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    max-width: 1000px; /* Adjust the max-width as needed */
+    border-collapse: collapse;
+    background-color: #fff; /* White background for the table */
+    color: #333; /* Dark text color for the table */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+    border-radius: 5px; /* Rounded corners for the table */
+}
+
+thead {
+    background-color: #333; /* Dark background for the table header */
+    color: #fff; /* White text color for the header */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for alternate rows */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px; /* Slightly smaller font size */
+    }
+
+    thead {
+        display: none; /* Hide table headers on small screens */
+    }
+
+    tbody, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        text-align: right;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 12px; /* Even smaller font size for very small screens */
+    }
+}
